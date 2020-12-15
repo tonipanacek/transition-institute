@@ -4,6 +4,14 @@
     {% include "head.njk" %}
   </head>
   <body class="{{ bodyClass }}">
-    {{ content | safe }}
+    <div class="video-bg">
+      <video autoplay loop muted>
+          <source src="/assets/videos/ti_{{ bg_video }}.mp4" type="video/mp4">
+      </video>
+    </div>
+    {% include "_navbar.njk" %}
+    <main class="{{ class }}">
+      {{ content | safe }}
+    </main>
   </body>
 </html>

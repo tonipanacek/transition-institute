@@ -1,0 +1,30 @@
+body {
+  background: $white;
+  margin: 0 auto;
+  height: 100%;
+  font-family: 'SangBleu Empire', serif;
+  font-size: 18px;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  padding: 0 6em;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vision {
+  max-width: 25%;
+  padding: 2em 8em;
+}
