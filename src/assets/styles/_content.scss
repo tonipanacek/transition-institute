@@ -1,6 +1,14 @@
 .vision {
-  max-width: 25%;
-  padding: 2em 8em;
+  max-width: none;
+  padding: 2em;
+  background: white;
+  border: 1px solid $black;
+  @include respond-to('large') {
+    max-width: 25%;
+    background: none;
+    border: none;
+    padding: 0;
+  }
   a {
     text-decoration: none;
     color: $black;
@@ -8,18 +16,21 @@
 }
 
 .projects {
-  max-width: 45%;
-  padding: 2em 8em;
-  float: right;
+  padding: 2em;
+  background: white;
+  border: 1px solid $black;
+  @include respond-to('large') {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    .empty-column, .right-column { width: 50%; }
+  }
   h4 { margin-bottom: 0; }
   p { margin-top: 0; }
-  a {
-    color: $black;
-  }
 }
 
 .home {
-  padding: 0 6em;
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -31,11 +42,8 @@
 
 .structure {
   display: flex;
-  min-height: 400px;
-  height: 75vh;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8em;
   h3 { font-style: italic; }
   .left {
     flex: 33%;
@@ -43,7 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    min-height: 75vh;
     p {
       margin: 0;
       text-align: right;
@@ -55,23 +63,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    min-height: 75vh;
     p {
       margin: 0;
+      text-align: left;
     }
   }
   .center {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     flex: 20ch;
-    margin: 0 2em;
-    height: 40vh;
     img {
-      flex: 10ch;
-      &.ne { transform: rotate(117deg); }
-      &.se { transform: rotate(45deg); }
+      width: 50%;
     }
   }
+}
+
+.imprint, .data-privacy {
+  padding: 1em 2em;
+  border: 1px solid black;
 }

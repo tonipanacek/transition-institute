@@ -16,3 +16,15 @@ p {
   text-align: justify;
 }
 
+a {
+  color: $black;
+}
+
+main {
+  min-height: 60vh;
+  margin: 2em 3em;
+  @include respond-to('large') {
+    min-height: 80vh;
+    margin: 2em 8em;
+  }
+}

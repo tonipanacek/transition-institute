@@ -11,7 +11,17 @@
     </div>
     {% include "_navbar.njk" %}
     <main class="{{ class }}">
-      {{ content | safe }}
+      {% if projects %}
+        <div class="empty-column"></div>
+        <div class="right-column">
+          {{ content | safe }}
+        </div>
+      {% else %}
+        {{ content | safe }}
+      {% endif %}
     </main>
+    {% if not(home) %}
+      {% include "_footer.njk" %}
+    {% endif %}
   </body>
 </html>
