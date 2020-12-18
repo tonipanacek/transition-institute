@@ -12,8 +12,11 @@ h1 {
   font-style: italic;
 }
 
-p {
-  text-align: justify;
+p { text-align: left; }
+@include respond-to('large') {
+  p {
+    text-align: justify;
+  }
 }
 
 a {
