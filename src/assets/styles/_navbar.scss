@@ -3,7 +3,7 @@
 }
 
 .mobile-nav {
-  margin: 2em 0;
+  // margin: 2em 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -34,6 +34,11 @@ nav {
   font-weight: 500;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 @include respond-to('large') {
   .mobile-nav {
     display: none;
@@ -43,7 +48,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2em 0;
+    // margin: 2em 0;
     padding: 0 6em;
   }
 }
