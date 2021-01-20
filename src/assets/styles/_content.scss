@@ -4,13 +4,12 @@
   background: white;
   border: 1px solid $black;
   @include respond-to('large') {
-    max-width: 25%;
+    max-width: 30ch;
     background: none;
     border: none;
     padding: 0;
   }
   a {
-    text-decoration: none;
     color: $black;
   }
 }
@@ -28,15 +27,21 @@
   }
   h4 { margin-bottom: 0; }
   p { margin-top: 0; }
+  .partners-section {
+    margin-bottom: 4em;
+  }
 }
 
 .home {
-  min-height: 60vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   h1 {
     text-shadow: 0px 1px white;
+  }
+  main {
+    margin: 0 3em;
   }
 }
 
@@ -83,4 +88,12 @@
 .imprint, .data-privacy {
   padding: 1em 2em;
   border: 1px solid black;
+}
+
+.contact {
+  min-height: 67vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
