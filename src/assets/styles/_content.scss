@@ -23,10 +23,16 @@
     background: none;
     border: none;
     padding: 0;
-    .empty-column, .right-column { width: 50%; }
+    .empty-column, .right-column {
+      width: 50%;
+    }
   }
-  h4 { margin-bottom: 0; }
-  p { margin-top: 0; }
+  h4 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
   .partners-section {
     margin-bottom: 4em;
   }
@@ -47,16 +53,19 @@
 }
 
 .structure {
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  h3 { font-style: italic; }
+  h3 {
+    font-style: italic;
+    margin-top: 0;
+  }
   .left {
     flex: 33%;
     text-align: right;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 75vh;
     p {
       margin: 0;
@@ -68,12 +77,15 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 75vh;
     p {
       margin: 0;
       text-align: left;
     }
+  }
+  .top-box {
+    min-height: 35vh;
+    margin-bottom: 2em;
   }
   .center {
     display: flex;
