@@ -108,5 +108,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background: white;
+  border: 1px solid black;
+  @include respond-to('large') {
+    background: transparent;
+    border: 0px;
+  }
+  form {
+    width: 75%;
+    @include respond-to('xl') {
+      width: 50%;
+    }
+    input, textarea {
+      box-sizing: border-box;
+    }
+  }
+  .form-input {
+    font-family: 'SangBleu Empire', serif;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .submit-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .submit-button {
+    background: white;
+    padding: .5em 4em;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-family: 'SangBleu Empire', sans-serif;
+    text-transform: uppercase;
+  }
 }
