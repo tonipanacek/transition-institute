@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Imprint
+title: Imprint - Transition Institute
 class: imprint
 ---
 

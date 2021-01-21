@@ -5,12 +5,17 @@
   border: 1px solid $black;
   @include respond-to('large') {
     max-width: 35ch;
+    display: flex;
+    flex-direction: column;
     background: none;
     border: none;
-    // padding: 0;
+    padding: 0;
   }
   a {
     color: $black;
+  }
+  p {
+    background: #ffffff5e;
   }
 }
 
@@ -40,12 +45,11 @@
 
 .home {
   min-height: 60vh;
+  margin: 0 3em;
+  margin-top: -1em;
   h1 {
     font-size: 1.2em;
     background: #ffffff5e;
-  }
-  main {
-    margin: 0 3em;
   }
 }
 
@@ -55,8 +59,12 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  @include respond-to('large') {
-    flex-direction: row;
+  .content {
+    display: flex;
+    flex-direction: column;
+    @include respond-to('large') {
+      flex-direction: row;
+    }
   }
   h3 {
     margin: 0;
@@ -128,7 +136,7 @@
 }
 
 .contact {
-  min-height: 67vh;
+  min-height: 73vh;
   display: flex;
   flex-direction: column;
   align-items: center;

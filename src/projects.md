@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Transition Institute
-bg_video: colorwater_1
+title: Projects - Transition Institute
+bg_video: colorwater
 class: projects
 projects: true
 partners: online

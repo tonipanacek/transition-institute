@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Imprint
+title: Data Privacy - Transition Institute
 class: data-privacy
 ---
 
