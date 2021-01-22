@@ -15,14 +15,13 @@ nav {
     font-style: italic;
   }
   a {
-    text-decoration: none;
     color: $black;
+    font-size: 1.1em;
   }
 }
 
 .logo {
   font-style: normal;
-  // background: white;
   padding: .5em 1em;
   border-radius: 150px;
   max-width: 30ch;
@@ -32,6 +31,9 @@ nav {
   margin: 0;
   font-size: 2em;
   font-weight: 500;
+  a {
+    text-decoration: none;
+  }
 }
 
 

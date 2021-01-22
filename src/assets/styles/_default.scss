@@ -3,11 +3,11 @@ body {
   margin: 0 auto;
   height: 100%;
   font-family: 'SangBleu Empire', serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.75em;
   text-align: center;
   font-style: italic;
   font-weight: 300;
@@ -34,7 +34,7 @@ main {
     margin: 2em 5em;
   }
   @include respond-to('large') {
-    min-height: 80vh;
+    min-height: 90vh;
     margin: 2em 8em;
   }
 }
