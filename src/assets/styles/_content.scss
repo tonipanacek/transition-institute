@@ -1,59 +1,117 @@
+#home {
+  background: url('/assets/images/home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 140px;
+  @include respond-to('large') {
+    background: none;
+    position: relative;
+    #nav-vision {
+      position: absolute;
+      top: 59vh;
+      left: 18vw;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    #nav-structure {
+      position: absolute;
+      top: 40vh;
+      left: 25vw;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    #nav-projects {
+      position: absolute;
+      top: 40vh;
+      right: 30vw;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    #nav-contact {
+      position: absolute;
+      top: 58vh;
+      right: 17vw;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.home {
+  @include respond-to('large') {
+    margin-top: -1em;
+  }
+  h1 {
+    display: none;
+    @include respond-to('large') {
+      font-size: 1.2em;
+      background: #ffffff5e;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
 #vision {
   background: url('/assets/images/vision.png');
   background-size: auto;
+  background-position-x: 609px;
   @include respond-to('large') {
     background: none;
   }
 }
 
 .vision {
-  margin: 2em;
-  @include respond-to('large') {
-    margin: 2em 12em;
-    max-width: 35ch;
-    display: flex;
-    flex-direction: column;
-    border: none;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  a {
-    color: $black;
+  // margin: 2em;
+  max-width: 1500px;
+  margin: 2em auto;
+  .vision-content {
+    @include respond-to('large') {
+      margin: 2em 12em;
+      max-width: 35ch;
+      display: flex;
+      flex-direction: column;
+      border: none;
+      padding: 0;
+    }
+    a {
+      color: $black;
+    }
   }
 }
 
 #projects {
   background: url('/assets/images/projects.png');
   background-size: cover;
+  background-position: center;
   @include respond-to('large') {
     background: none;
   }
 }
 
 .projects {
-  @include respond-to('large') {
-    padding: 2em;
-    display: flex;
-    background: none;
-    border: none;
-    padding: 0;
-    .empty-column, .right-column {
-      width: 50%;
-      background: none;
-      padding: none;
+  @include respond-to('large'){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-content {
+    background: #ffffffd6;
+    padding: 1em;
+    @include respond-to('large') {
+      grid-column: 2;
+      margin-right: 8em;
     }
   }
-  .right-column {
-    background: white;
-    padding: 1em;
-  }
 
-  p {
-    margin-top: 0;
-  }
-  .partners-section {
-    margin-bottom: 4em;
-  }
   h4 a {
     text-transform: uppercase;
     font-style: italic;
@@ -65,32 +123,24 @@
   }
 }
 
-.home {
-  min-height: 74vh;
-  margin: 0 3em;
-  margin-top: -1em;
-  h1 {
-    font-size: 1.2em;
-    background: #ffffff5e;
-    text-align: center;
-  }
-}
-
 #structure {
   background: url('/assets/images/structure.png');
   background-size: cover;
+  background-position: center;
   @include respond-to('large') {
     background: none;
   }
 }
 
 .structure {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  h1 {
-    margin-bottom: 0;
+  @include respond-to('large') {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    h1 {
+      margin-bottom: 0;
+    }
   }
   h3 {
     margin: 0;
@@ -106,7 +156,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 60vh;
-    background: white;
+    background: #ffffffa8;
     @include respond-to('large') {
       background: none;
       flex-direction: row;
@@ -135,11 +185,8 @@
     }
   }
 
-  .box {
-    margin-bottom: 2em;
-    padding: 1em 2em;
+  .box {    padding: 1em;
     @include respond-to('large') {
-      background: transparent;
       border: none;
       padding: none;
     }
@@ -184,13 +231,13 @@
 #contact {
   background: url('/assets/images/contact.png');
   background-size: cover;
+  background-position: center;
   @include respond-to('large') {
     background: none;
   }
 }
 
 .contact {
-  min-height: 73vh;
   display: flex;
   flex-direction: column;
   align-items: center;

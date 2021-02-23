@@ -12,10 +12,7 @@
     {% include "_navbar.njk" %}
     <main class="{{ class }}">
       {% if projects %}
-        <div class="empty-column"></div>
-        <div class="right-column">
-          {{ content | safe }}
-        </div>
+        {{ content | safe }}
       {% else %}
         {{ content | safe }}
       {% endif %}

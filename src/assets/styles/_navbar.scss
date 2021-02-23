@@ -3,14 +3,18 @@
 }
 
 .mobile-nav {
-  // margin: 2em 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
 }
 
-nav {
+.main-nav, .mobile-nav {
   font-family: 'SangBleu Empire', serif;
   @include respond-to('large') {
     position: sticky;
@@ -28,7 +32,7 @@ nav {
 }
 
 .logo {
-  font-style: normal;
+  font-style: normal !important;
   padding: .5em 1em;
   border-radius: 150px;
   max-width: 30ch;
@@ -38,14 +42,21 @@ nav {
   margin: 0;
   font-size: 2em;
   font-weight: 500;
+  flex: 1 0 550px;
   a {
     text-decoration: none;
   }
 }
 
+.mobile-home {
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 
 @include respond-to('large') {
-  .mobile-nav {
+  .mobile-nav, .mobile-home {
     display: none;
   }
   .main-nav {
@@ -55,5 +66,17 @@ nav {
     justify-content: space-between;
     padding: 1em 6em;
     margin: 0;
+  }
+}
+
+.nav-group {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @include respond-to('navbar') {
+    justify-content: space-between;
+    flex-direction: row;
   }
 }

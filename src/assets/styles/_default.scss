@@ -12,7 +12,7 @@ h1 {
   font-style: italic;
   font-weight: 300;
   font-family: 'SangBleu Empire', serif;
-  background: white;
+  // background: #ffffff73;
   @include respond-to('large') {
     text-align: left;
     background: none;
@@ -26,7 +26,7 @@ h2, h3, h4, h5, h6 {
 
 p {
   text-align: left;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 a {
@@ -34,18 +34,23 @@ a {
 }
 
 main {
-  min-height: 67vh;
-  margin: 2em 3em;
+  min-height: 08vh;
+  margin: 2em;
+  margin-top: 0;
   @include respond-to('medium') {
     margin: 2em 5em;
   }
   @include respond-to('large') {
     min-height: 71vh;
-    margin: 2em 8em;
+    margin: 2em auto;
+    max-width: 1500px;
   }
 }
 
 .text-box {
-  background: white;
+  background: #ffffffd6;
   padding: 1em;
+  @include respond-to('large') {
+    padding: 0;
+  }
 }
