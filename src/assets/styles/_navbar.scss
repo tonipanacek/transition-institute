@@ -11,12 +11,19 @@
 }
 
 nav {
+  font-family: 'SangBleu Empire', serif;
+  @include respond-to('large') {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
   li {
     font-style: italic;
   }
   a {
     color: $black;
     font-size: 1.1em;
+    text-decoration: none;
   }
 }
 
@@ -46,7 +53,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // margin: 2em 0;
-    padding: 0 6em;
+    padding: 1em 6em;
+    margin: 0;
   }
 }

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects - Transition Institute
-bg_video: colorwater
+bg_video: projects
 class: projects
 projects: true
 partners: online
@@ -19,6 +19,8 @@ Corona Culture explores this time of radical transformation through the lens of 
 #### [Menstruation Project](https://www.menstruation-project.com)
 
 The Menstruation Project is dedicated to raising awareness about the menstrual cycle, which symbolically stands for the universal rhythms of life as well as the long-suppressed feminine powers, and furthermore functions as an inner compass for one’s state of being. Beginning with a festival and documentary series, it aspires to educate and empower both menstruating and non-menstruating people alike, in order to reveal the cycle’s societal significance and advocate its integration into contemporary culture.
+
+#### & further projects in progress
 
 </div>
 

@@ -1,48 +1,86 @@
-.vision {
-  max-width: none;
-  padding: 2em;
-  background: #ffffff5e;
-  margin: 2em 12em;
+#vision {
+  background: url('/assets/images/vision.png');
+  background-size: auto;
   @include respond-to('large') {
+    background: none;
+  }
+}
+
+.vision {
+  margin: 2em;
+  @include respond-to('large') {
+    margin: 2em 12em;
     max-width: 35ch;
     display: flex;
     flex-direction: column;
-    background: #ffffff5e;
     border: none;
     padding: 0;
+    margin-bottom: 0;
   }
   a {
     color: $black;
   }
 }
 
-.projects {
-  padding: 2em;
-  background: #ffffff5e;
+#projects {
+  background: url('/assets/images/projects.png');
+  background-size: cover;
   @include respond-to('large') {
+    background: none;
+  }
+}
+
+.projects {
+  @include respond-to('large') {
+    padding: 2em;
     display: flex;
     background: none;
     border: none;
     padding: 0;
     .empty-column, .right-column {
       width: 50%;
+      background: none;
+      padding: none;
     }
   }
+  .right-column {
+    background: white;
+    padding: 1em;
+  }
+
   p {
     margin-top: 0;
   }
   .partners-section {
     margin-bottom: 4em;
   }
+  h4 a {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.17em;
+  }
+  h4 {
+    font-style: italic;
+    font-size: 1.17em;
+  }
 }
 
 .home {
-  min-height: 60vh;
+  min-height: 74vh;
   margin: 0 3em;
   margin-top: -1em;
   h1 {
     font-size: 1.2em;
     background: #ffffff5e;
+    text-align: center;
+  }
+}
+
+#structure {
+  background: url('/assets/images/structure.png');
+  background-size: cover;
+  @include respond-to('large') {
+    background: none;
   }
 }
 
@@ -63,13 +101,14 @@
     margin: 0;
   }
   .content {
-    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 70vh;
+    min-height: 60vh;
+    background: white;
     @include respond-to('large') {
+      background: none;
       flex-direction: row;
     }
   }
@@ -78,26 +117,25 @@
     @include respond-to('large') {
       flex: 33%;
       min-height: 58vh;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .right {
     @include respond-to('large') {
       flex: 33%;
       min-height: 58vh;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .box {
-    background: #ffffff5e;
     margin-bottom: 2em;
     padding: 1em 2em;
     @include respond-to('large') {
@@ -109,14 +147,18 @@
   .hub, .ed-center {
     p {
       margin: 0;
-      text-align: right;
+      @include respond-to('large') {
+        text-align: right;
+      }
     }
   }
 
   .culture, .changemaker {
     p {
       margin: 0;
-      text-align: left;
+      @include respond-to('large') {
+        text-align: left;
+      }
     }
   }
 
@@ -139,12 +181,20 @@
   border: 1px solid black;
 }
 
+#contact {
+  background: url('/assets/images/contact.png');
+  background-size: cover;
+  @include respond-to('large') {
+    background: none;
+  }
+}
+
 .contact {
   min-height: 73vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff5e;
+
   @include respond-to('large') {
     background: transparent;
     border: 0px;
