@@ -7,11 +7,19 @@
   @include respond-to('large') {
     background: none;
     position: relative;
+    .main-nav {
+      background: none;
+    }
+    .logo {
+      font-size: 2.3rem;
+      flex: 1 0 auto;
+    }
     #nav-vision {
       position: absolute;
-      top: 59vh;
-      left: 18vw;
+      top: 62vh;
+      left: 16vw;
       transition: all 0.3s ease;
+      font-size: 1.2rem;
       &:hover {
         transform: scale(1.2);
       }
@@ -19,8 +27,9 @@
     #nav-structure {
       position: absolute;
       top: 40vh;
-      left: 25vw;
+      left: 20vw;
       transition: all 0.3s ease;
+      font-size: 1.2rem;
       &:hover {
         transform: scale(1.2);
       }
@@ -28,8 +37,9 @@
     #nav-projects {
       position: absolute;
       top: 40vh;
-      right: 30vw;
+      right: 28vw;
       transition: all 0.3s ease;
+      font-size: 1.2rem;
       &:hover {
         transform: scale(1.2);
       }
@@ -37,8 +47,9 @@
     #nav-contact {
       position: absolute;
       top: 58vh;
-      right: 17vw;
+      right: 15vw;
       transition: all 0.3s ease;
+      font-size: 1.2rem;
       &:hover {
         transform: scale(1.2);
       }
@@ -57,6 +68,8 @@
       background: #ffffff5e;
       text-align: center;
       display: block;
+      font-style: normal;
+      margin-top: -25px;
     }
   }
 }
