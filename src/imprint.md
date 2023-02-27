@@ -6,7 +6,7 @@ class: imprint
 
 #### Angaben gemäß § 5 TMG:
 
-<p>Transition GmbH <em>for social, cultural and artistic transformation</em><br>
+<p>Transition gGmbH <em>for social, cultural and artistic transformation</em><br>
 Am Krögel<br>
 10179 Berlin<br>
 Deutschland</p>

@@ -4,7 +4,7 @@ title: Data Privacy - Transition Institute
 class: data-privacy
 ---
 
-### Disclaimer
+### Datenschutz
 
 #### Haftung für Inhalte
 
